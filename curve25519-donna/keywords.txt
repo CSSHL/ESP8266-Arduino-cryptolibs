@@ -1,0 +1,2 @@
+curve25519_donna	KEYWORD2
+curve25519_donna_debug	KEYWORD2
