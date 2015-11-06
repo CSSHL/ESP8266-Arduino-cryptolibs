@@ -3,3 +3,4 @@ Collection of strong crypto libs that can be included in Arduino-core for ESP826
 
   - curve25519-donna : strong ECC key agreement function
   - esp8266-trng : simple wrapper to the HW TRNG
+  - sha256 : SHA2-256 class
