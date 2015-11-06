@@ -6,7 +6,7 @@
 int counter=0;
 
 void setup() {
-  Serial.begin(115200); // Serial is on GPIO0 and GPIO3
+  Serial.begin(115200); // Serial is on GPIO1(tx) and GPIO3(rx)
 }
 
 void doit(u8 *ek,const u8 *e,const u8 *k)
