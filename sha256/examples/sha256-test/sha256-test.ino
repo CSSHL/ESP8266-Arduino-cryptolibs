@@ -6,14 +6,16 @@ void setup() {
 
   Serial.begin(115200);
 
-  Sha256* test=new Sha256();
+  Sha256* sha256Instance=new Sha256();
   BYTE text[]="abc";
-  test->update(text, strlen((const char*)text));
-  test->final(hash);
+  sha256Instance->update(text, strlen((const char*)text));
+  sha256Instance->final(hash);
 
   for(int i=0; i<SHA256_BLOCK_SIZE; ++i)
     sprintf(texthash+2*i, "%02X", hash[i]);
   Serial.println(texthash);
+  
+  delete sha256Instance;
 }
 
 void loop() {
